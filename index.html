@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
   <title>CRL Final Project</title>
 </head>
 
@@ -16,14 +17,23 @@
   <header class="nav">
     <div class="container">
       <nav class="row">
-        <img src="./images/logo.svg" alt="Conquering Responsive Layout" class="crl-logo">
-        <ul class="nav-lists">
-          <li class="nav-list"><a href="#">Home</a></li>
-          <li class="nav-list"><a href="#">About</a></li>
-          <li class="nav-list"><a href="#">Contact</a></li>
-          <li class="nav-list"><a href="#">Sign In</a></li>
-          <li class="nav-list nav__button"><a href="#">Sign Up</a></li>
-        </ul>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Conquering Responsive Layout" class="crl-logo">
+        </div>
+        <div class="nav-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <div class="nav__link">
+          <ul class="nav-lists nav-lists--primary">
+            <li class="nav-list"><a href="#">Home</a></li>
+            <li class="nav-list"><a href="#">About</a></li>
+            <li class="nav-list"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav-lists nav-lists--secondary">
+            <li class="nav-list"><a href="#">Sign In</a></li>
+            <li class="nav-list nav__button"><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

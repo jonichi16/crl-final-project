@@ -66,6 +66,50 @@ footer {
 
 .nav {
   background-color: var(--background-nav);
+  padding: 1.5em 0;
+}
+
+.nav__link {
+  display: none;
+  margin: 1.2em auto 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.nav__link--visible {
+  display: block;
+}
+
+.nav-toggle {
+  margin: 0;
+  width: 2.2rem;
+  height: auto;
+  position: absolute;
+  right: 7.5%;
+  top: 2em;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-9px);
+}
+
+.hamburger::after {
+  transform: translateY(6px);
 }
 
 .crl-logo {
@@ -73,11 +117,31 @@ footer {
 }
 
 .nav-lists {
-  display: flex;
+  font-family: var(--font-header);
+  font-size: 1.125rem;
+}
+
+.nav-list:hover,
+.nav-list:focus {
+  opacity: 0.75;
+}
+
+.nav-list {
+  margin: 0.5em 0;
 }
 
 .nav-lists a {
   color: var(--font-color-light);
+}
+
+.nav-lists--primary {
+  margin-bottom: 1.5em;
+}
+
+.nav__button {
+  background-color: var(--background-accent);
+  padding: 0.2em 1.2em;
+  border-radius: 100px;
 }
 
 .cta {
