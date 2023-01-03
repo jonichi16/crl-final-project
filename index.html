@@ -16,23 +16,25 @@
 <body>
   <header class="nav">
     <div class="container">
-      <nav class="row">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Conquering Responsive Layout" class="crl-logo">
+      <nav>
+        <div class="row">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Conquering Responsive Layout" class="crl-logo">
+          </div>
+          <div class="nav__link">
+            <ul class="nav-lists nav-lists--primary">
+              <li class="nav-list"><a href="#">Home</a></li>
+              <li class="nav-list"><a href="#">About</a></li>
+              <li class="nav-list"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav-lists nav-lists--secondary">
+              <li class="nav-list"><a href="#">Sign In</a></li>
+              <li class="nav-list nav__button"><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
         </div>
         <div class="nav-toggle">
           <div class="hamburger"></div>
-        </div>
-        <div class="nav__link">
-          <ul class="nav-lists nav-lists--primary">
-            <li class="nav-list"><a href="#">Home</a></li>
-            <li class="nav-list"><a href="#">About</a></li>
-            <li class="nav-list"><a href="#">Contact</a></li>
-          </ul>
-          <ul class="nav-lists nav-lists--secondary">
-            <li class="nav-list"><a href="#">Sign In</a></li>
-            <li class="nav-list nav__button"><a href="#">Sign Up</a></li>
-          </ul>
         </div>
       </nav>
     </div>
@@ -43,36 +45,36 @@
       <div class="row">
         <h1 class="cta__title">Responsive layouts <span class="cta__title--brown">don't have to be a struggle</span>
         </h1>
-      </div>
-      <div class="row">
-        <p class="cta__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel quam at temporibus
-          ex
-          ipsa tempore
-          necessitatibus laboriosam dicta velit!</p>
-        <div class="cta__button">
-          <a href="#">I want to learn</a>
+        <div class="cta__content">
+          <p class="cta__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel quam at temporibus
+            ex
+            ipsa tempore
+            necessitatibus laboriosam dicta velit!</p>
+          <div class="cta__button">
+            <a href="#">I want to learn</a>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
   <section class="features">
-    <div class="container">
-      <div class="row card features__card">
+    <div class="row container">
+      <div class="card features__card">
         <h2 class="title feature__card--title">Mobile-first</h2>
         <p class="feature__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, exercitationem?
           Ab maxime impedit porro
           aliquam
           ratione, tenetur dicta alias asperiores, aspernatur a vel exercitationem minima!</p>
       </div>
-      <div class="row card features__card">
+      <div class="card features__card">
         <h2 class="title feature__card--title">Efficient</h2>
         <p class="feature__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, exercitationem?
           Ab maxime impedit porro
           aliquam
           ratione, tenetur dicta alias asperiores, aspernatur a vel exercitationem minima!</p>
       </div>
-      <div class="row card features__card">
+      <div class="card features__card">
         <h2 class="title feature__card--title">Done right</h2>
         <p class="feature__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, exercitationem?
           Ab maxime impedit porro
@@ -83,18 +85,20 @@
   </section>
 
   <section class="process">
-    <div class="container">
-      <div class="row">
+    <div class="row container">
+      <div class="col">
         <h2 class="title process__title">It doesn't have to be so hard</h2>
         <p class="process__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas non iusto, laboriosam
           commodi alias cupiditate
           est autem voluptates facilis numquam eos molestias, aperiam accusamus dicta sunt error dolor ab sed!</p>
-        <img src="./images/the-image.jpg" alt="series of wireframes" class="process__image">
+        <div class="process__image">
+          <img src="./images/the-image.jpg" alt="series of wireframes">
+        </div>
         <p class="process__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, suscipit
           perferendis. Nulla, laborum.
           Fugit, earum? Reiciendis libero magnam, quo nostrum ducimus rem culpa est omnis.</p>
       </div>
-      <div class="row">
+      <div class="col">
         <div class="process__card-container">
           <div class="card process__card">
             <h2 class="process__card--title">Break it down</h2>
